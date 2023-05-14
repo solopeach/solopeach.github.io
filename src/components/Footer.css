@@ -1,0 +1,33 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 10%;
+  align-items: center;
+  background-color: aquamarine;
+}
+
+.contactSection {
+  text-align: right;
+}
+
+.contactSection a {
+  padding-bottom: 0px;
+}
+
+.contactSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+/* .contactSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0rem;
+}
+
+.contactSection p {
+  padding: 0;
+} */

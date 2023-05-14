@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  list-style: none;
+}
+
+.header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navlinks li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+.navlinks li a {
+  transition: all 0.3s ease 0s;
+}
+
+.navlinks li a:hover {
+  color: #0088a9;
+}

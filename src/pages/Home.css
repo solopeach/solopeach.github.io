@@ -1,0 +1,14 @@
+.page {
+  padding: 30px 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.short {
+  width: 45%;
+}
+
+.page a {
+  text-decoration: none;
+  color: blue;
+}
