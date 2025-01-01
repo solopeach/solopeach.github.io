@@ -1,0 +1,44 @@
+.griditem {
+  background-color: #eee;
+  display: block;
+  margin: 0 0 1em;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  border: 0.2em solid var(--grey4);
+  box-shadow: 0 0.25em 0 var(--grey4);
+}
+
+.griditem img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+  
+  .caption {
+    position: absolute;
+    bottom: 0.5em;
+    left: 0.5em;
+    right: 0.5em;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0.5em 0.8em;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s, transform 0.3s;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+    border-radius: 0.43em;
+  }
+  
+  .griditem:hover .caption {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .description {
+    font-size: 0.9em;
+    color: #ccc;
+  }
+  

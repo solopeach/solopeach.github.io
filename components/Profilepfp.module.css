@@ -1,0 +1,73 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding);
+    background-color: var(--tertiary2);
+    border-radius:  0 var(--border-radius) var(--border-radius) var(--border-radius);
+    gap: var(--padding);
+    width: 100%;
+}
+
+.tabbutton {
+    padding: var(--padding-thin) var(--padding-thin);
+    background-color: var(--fourth2);
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    transition: transform 0.3s ease, background-color 0.1s ease;
+    transform-origin: bottom left;
+}
+
+.activetab {
+    background-color: var(--tertiary2);
+    z-index: 1;
+    transform: scale(1.1);
+}
+
+.container {
+    width: 100%;
+}
+
+.tabsection {
+    display: flex;
+    gap: 0;
+}
+
+.typingcontainer {
+    border: 0.2em solid var(--grey4);
+    box-shadow: 0 0.25em 0 var(--grey4);
+    background-color: var(--white);
+    padding: var(--padding-thin);
+}
+
+.typing {
+    width: fit-content;
+}
+
+.typing p {
+    overflow: hidden;
+    border-right: .15em solid var(--text-primary); /* The typwriter cursor */
+    white-space: nowrap;
+    animation: 
+      typing 2s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--text-primary) }
+  }
+
+.img {
+    border-radius: var(--border-radius);
+    object-fit: cover;
+    height: 14em;
+    width: 100%;
+  }
+
+.secondtab {
+    margin-left: -0.2em !important;
+}

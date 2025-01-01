@@ -1,0 +1,38 @@
+.navcontainer {
+    display: flex;
+    gap: 2em;
+}
+
+.navbutton {
+    padding: 0.7em var(--padding);
+    height: 100%;
+    position: relative;
+    border-radius: 2rem;
+    color: black;
+}
+
+.navbutton:hover {
+    color: white; /* slate-200 */
+    background-color: var(--fourth); /* slate-700 */
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Transition effect for color and background */
+}
+
+.customgradient {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    background: linear-gradient(to right, var(--fifth), var(--dark)); /* violet-600 to indigo-600 */
+    border-radius: 2rem;
+  }
+  
+.textspan {
+    position: relative;
+    z-index: 10;
+}
+
+.activetext {
+    color: white;
+}

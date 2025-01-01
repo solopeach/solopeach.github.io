@@ -1,20 +1,128 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family:
-    Inter,
-    -apple-system,
-    BlinkMacSystemFont,
-    Segoe UI,
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    Fira Sans,
-    Droid Sans,
-    Helvetica Neue,
-    sans-serif;
+  color: var(--text-primary);
+  letter-spacing: .08em;
+  font-family: 'Satoshi-Regular', sans-serif;
+  font-size: 1.11vw;
+  line-height: 1.2;
+  background-image: url('/images/paperbg.jpg'); /* Use the public folder for the image */
+  background-size: auto; /* Ensures the image covers the entire screen */
+  background-repeat: no-repeat; /* Prevents tiling */
+  background-position: center; /* Centers the image */
+  background-attachment: fixed;
+}
+
+:root {
+  --border-radius: 0.83em;
+  --border-radius-small: 0.5em;
+  --padding: 1.11em;
+  --padding-thin: 0.55em;
+  --primary: #e3ecf5;
+  --primary2: #bfd2e9;
+  --primary3: #d1e0f3;
+  --secondary: #9ec8ed;
+  --tertiary: #afd0ec;
+  --tertiary2: #a1c9ee;
+  --fourth: #7db4e2;
+  --fourth2: #66aae3;
+  --fifth: #4e99d7;
+  --dark: #106cb7;
+  --dark2: #084d86;
+  --white: #f7f7f7;
+  --grey1: #ebebeb;
+  --grey2: #e1e1e1;
+  --grey3: #7a7a7a;
+  --grey4: #4b4b4b;
+  --text-primary: rgb(31, 32, 33);
+}
+
+/* --primary: #d9e2ed;
+  --secondary: #f8f8f8;
+  --tertiary: #afd0ec;
+  --fourth: #8abce8;
+  --background: #6aa4db;
+  --dark: #0c62aa;
+  */
+
+@font-face {
+  font-family: 'Satoshi-Regular';
+  src: url('../public/fonts/Satoshi-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi-Medium';
+  src: url('../public/fonts/Satoshi-Medium.otf');
+  font-weight: medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi-Bold';
+  src: url('../public/fonts/Satoshi-Bold.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+p, h3, h2, h4, h5, h1 {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  font-family: 'Satoshi-Medium', sans-serif;
+}
+
+h3 {
+  font-family: 'Satoshi-Medium', sans-serif;
+  font-weight: medium;
+}
+
+h2 {
+  font-family: 'Satoshi-Bold', sans-serif;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 991px) {
+  h3 {
+      font-size: 3vw;
+  }
+
+  h2 {
+    font-size: 4vw;
+  }
+
+  body {
+    font-size: 3vw;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  h2 {
+      font-size: clamp(16px, 1.4vw, 20px);
+  }
+
+  h3 {
+    font-size: clamp(14px, 1.2vw, 17px);
+  }
+  
+  body {
+    font-size: clamp(12.5px, 1.11vw, 15px);
+  }
+}
+
+div {
+  border-radius: var(--border-radius);
 }
 
 a {
@@ -26,7 +134,32 @@ a {
   box-sizing: border-box;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+button {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  letter-spacing: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  all: unset;
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 !important;
+}
+
+/* Global scrollbar styles for all scrollbars */
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 18px;
+  margin-block: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+  background-color: var(--fourth);
 }

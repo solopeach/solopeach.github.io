@@ -1,0 +1,9 @@
+.screen {
+    border-radius: var(--border-radius);
+    height: 15em;
+    padding: .9em;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(63, 63, 63);
+    border: 1em solid black;
+}

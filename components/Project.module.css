@@ -1,0 +1,93 @@
+.container {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    grid-template-rows: auto;
+    background-color: var(--white);
+    align-items: center;
+    gap: var(--padding);
+    width: 100%;
+    overflow: hidden;
+    border: 0.2em solid var(--grey4);
+    box-shadow: 0 0.15em 0 var(--grey4);
+}
+
+.short {
+    color: var(--grey3);
+}
+
+.textcontainer {
+    padding: calc(2*var(--padding)) var(--padding);
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.maindetails {
+    display: flex;
+    justify-content: space-between;
+}
+
+.maintext {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35em;
+}
+
+.datelocation {
+    display: flex;
+    gap: 1.11em;
+}
+
+.stackcontainer {
+    display: flex;
+    gap: 0.55em;
+    margin-top: 0.85em;
+}
+
+.whatididlist {
+    padding-left: 1.11em;
+    margin: 0;
+}
+
+.whatididpoint {
+    padding-bottom: 0.55em;
+}
+
+.stacktag {
+    padding: 0.3em 0.6em;
+    color: var(--dark2);
+    background-color: var(--primary3);
+    border-radius: 2.125em;
+}
+
+.hiddenClosed {
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: max-height 220ms ease-out, opacity 100ms ease-out, visibility 0s 300ms;
+}
+
+.hiddenContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1.11em;
+}
+
+@media screen and (max-width: 991px) {
+    .rolename {
+        font-size: 3vw;
+    }
+  }
+  
+  @media only screen and (min-width: 1000px) {
+    .rolename {
+        font-size: clamp(14px, 1.4vw, 20px);
+    }
+  }

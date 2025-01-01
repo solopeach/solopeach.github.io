@@ -1,131 +1,62 @@
-import Head from 'next/head';
-import styles from '../styles/Home.module.css';
+import styles from './index.module.css';
+import Window from '../components/Window.js';
+import Image from 'next/image';
+import { motion } from "framer-motion";
+import Link from 'next/link'; 
 
 export default function Home() {
+  const images = [
+    {
+      src: "/images/aboutwindow.png",
+      alt: "About window",
+      className: styles.about,
+      link: "/about",
+    },
+    {
+      src: "/images/experiencewindow.png",
+      alt: "Experience window",
+      className: styles.exp,
+      link: "/experience",
+    },
+    {
+      src: "/images/projectswindow.png",
+      alt: "Projects window",
+      className: styles.projects,
+      link: "/projects",
+    },
+  ];
+
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing <code>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
-        </a>
-      </footer>
-
-      <style jsx>{`
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        footer img {
-          margin-left: 0.5rem;
-        }
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          text-decoration: none;
-          color: inherit;
-        }
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family:
-            Menlo,
-            Monaco,
-            Lucida Console,
-            Liberation Mono,
-            DejaVu Sans Mono,
-            Bitstream Vera Sans Mono,
-            Courier New,
-            monospace;
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family:
-            -apple-system,
-            BlinkMacSystemFont,
-            Segoe UI,
-            Roboto,
-            Oxygen,
-            Ubuntu,
-            Cantarell,
-            Fira Sans,
-            Droid Sans,
-            Helvetica Neue,
-            sans-serif;
-        }
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
+    <div className={styles.constraints}>
+      <img
+        key={0}
+        src="/images/introwindow.png"
+        alt="Intro window"
+        className={styles.intro}
+      />
+      {images.map((image, index) => (
+        <Link key={index} href={image.link}>
+          <motion.img
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.8 }}
+            src={image.src}
+            alt={image.alt}
+            className={image.className}
+          />
+        </Link>
+      ))}
+      <img
+        key={10}
+        src="/images/folders.png"
+        alt="Folders backdrop"
+        className={styles.folders}
+      />
+      <img
+        key={10}
+        src="/images/bottom bar.png"
+        alt="Bottom bar backdrop"
+        className={styles.bottombar}
+      />
     </div>
   );
 }

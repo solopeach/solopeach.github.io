@@ -1,0 +1,16 @@
+.togglesection {
+    background-color: var(--fourth);
+    border-radius: .56em;
+    align-items: center;
+    width: 100%;
+    min-height: 4em;
+    padding: 1.11em;
+    transition: background-color .1s;
+    display: flex;
+    overflow: hidden;
+    gap: 1.7em;
+}
+
+.togglesection:hover {
+    background-color: var(--fifth);
+  }

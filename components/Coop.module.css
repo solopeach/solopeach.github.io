@@ -1,0 +1,96 @@
+.container {
+    padding: 1.11em;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    padding-right: calc(var(--padding) * 2);
+    border: 0.2em solid var(--grey4);
+    box-shadow: 0 0.15em 0 var(--grey4);
+}
+
+.icon {
+  color: var(--grey4);
+}
+
+.maindetails {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.bottomdetails {
+    padding-top: 0.3em;
+}
+
+.maintext {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35em;
+    justify-content: center;
+}
+
+.stackcontainer {
+    display: flex;
+    gap: 0.55em;
+    margin-top: 0.85em;
+}
+
+.whatididlist {
+    padding-left: 1.11em;
+    margin: 0;
+}
+
+.whatididpoint {
+    padding-bottom: 0.55em;
+}
+
+.stacktag {
+    padding: 0.3em 0.6em;
+    color: var(--dark2);
+    background-color: var(--primary3);
+    border-radius: 2.125em;
+}
+
+.hiddenClosed {
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: max-height 220ms ease-out, opacity 100ms ease-out, visibility 0s 300ms;
+}
+
+.hiddenOpen {
+    max-height: 1000px;
+    opacity: 1;
+    transition: max-height 300ms ease-in, opacity 300ms ease-in;
+}
+
+.hiddenContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1.11em;
+    padding-top: var(--padding-thin)
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures the image scales within the parent div */
+    border-radius: var(--border-radius);
+}
+
+.leftcontainer {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 5.5em;
+    width: 80%;
+    grid-gap: calc(2 * var(--padding));
+}
+
+.leftcontainer > :nth-child(2n - 1) {
+    justify-self: center; /* Center horizontally for first column */
+    align-self: center;   /* Center vertically (optional) */
+}

@@ -1,0 +1,19 @@
+.gridcontainer {
+    column-count: 3;
+    column-gap: 1em;
+    padding-bottom: var(--padding-thin);
+  }
+
+  @media (max-width: 768px) {
+    .gridcontainer {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+.intro {
+  padding-bottom: var(--padding-thin);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--padding);
+}
