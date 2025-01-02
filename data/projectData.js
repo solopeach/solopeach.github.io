@@ -35,7 +35,7 @@ const coopData = [
     description: `
       I made this website to better showcase who I am. 
       I wanted to highlight the various sides of me, and that inspired parts of the design like the avatar customizer.
-      The hardest part was coming up the homepage design and choosing a color theme.
+      The hardest part was coming up with the homepage design and choosing a color theme.
       Credits to okkoinu on Reddit for the Windows XP wallpaper.
     `,
     image: "/images/sonic.png"
