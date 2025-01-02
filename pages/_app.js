@@ -37,6 +37,7 @@ function MyApp({ Component, pageProps, router }) {
         <Head>
             <title>Roni Wu</title>
             <meta name="description" content="Roni Wu's dev portfolio" />
+            <link rel="icon" href="/images/logo.png" />
         </Head>
         <Layout isHome={isHome}>
             <Component {...pageProps} />

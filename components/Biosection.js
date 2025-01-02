@@ -4,6 +4,8 @@ import Button from "./Button";
 import Customizer from "./Customizer";
 import Screen from "./Screen";
 
+// Credits to Pierre-Louis Labonne for the sidebar inspo: https://pierrelouis.webflow.io/#main-section
+
 const Bio = ({ children }) => {
     const [activeToggle, setActiveToggle] = useState(null);
     const [role, setRole] = useState(null);
@@ -20,7 +22,7 @@ const Bio = ({ children }) => {
 
     return (
         <div className={styles.bio}>
-            <div className={styles.name}>Roni Wu</div>
+            <div className={styles.top}><h4 className={styles.title}>RONI WU</h4><h4 className={styles.stars}>｡･:*:･ﾟ★,｡･:*:･ﾟ☆</h4></div>
             <div className={styles.divider} />
             <Screen role={role} />
             <div className={styles.contactsection}>

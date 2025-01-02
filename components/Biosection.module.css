@@ -7,6 +7,11 @@
     padding: 1.11em;
 }
 
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
 .content {
     grid-area: contents;
     background-color: var(--dark);
@@ -40,7 +45,7 @@
 
 .divider {
     background-color: var(--dark);
-    height: 1em;
+    height: 0.9em;
 }
 
 .contactsection {
@@ -51,9 +56,17 @@
     gap: 0.7em;
 }
 
-.name {
+.title {
     text-transform: uppercase;
     font-family: 'Satoshi-Bold', sans-serif;
+    letter-spacing: 0.3vw;
+    color: var(--dark2);
+}
+
+.stars {
+    font-weight: bold;
+    letter-spacing: 0.3vw;
+    color: var(--primary3);
 }
 
 .img {

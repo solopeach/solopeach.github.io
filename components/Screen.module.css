@@ -23,11 +23,6 @@
     z-index: 10;
 }
 
-.face {
-    position: absolute;
-    margin-right: 0.7em;
-    width: 10.3em;
-}
 .facecontainer {
     justify-content: center;
     align-items: center;
@@ -83,22 +78,52 @@
     right: 1em;
 }
 
-@keyframes bounce {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(20px);
-  }
-  100% {
-    transform: translateY(0);
-  }
+.face {
+    position: absolute;
+    margin-right: 0.7em;
+    width: 10.3em;
+    transition: transform 2s ease-out, opacity 0.5s ease-out;
+    opacity: 0;
 }
 
-.bounce {
-  display: inline-block;
-  animation: bounce 0.2s ease;
+.firm {
+    opacity: 1;
 }
+
+.init {
+    animation: initani 0.5s ease-out forwards;
+    bottom: 0;
+}
+
+.reflect {
+    z-index: 20;
+    opacity: .06;
+    mix-blend-mode: normal;
+    background-color: #fff;
+    height: 6em;
+    position: absolute;
+    top: -13%;
+    bottom: auto;
+    left: -21%;
+    right: 0%;
+    transform: rotate(-11deg);
+}
+
+@keyframes initani {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(-30%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-21%);
+        opacity: 1
+    }
+}
+
 
 @keyframes noise {
     0%, 100% {
