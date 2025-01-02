@@ -10,8 +10,8 @@ const Profilepfp = () => {
 
     const getImageSrc = () => {
         return activeTab === 'tab1'
-            ? 'images/artroni.jpg'
-            : 'images/roni.jpg';
+            ? '/images/artroni.jpg'
+            : '/images/roni.jpg';
     };
 
     return (

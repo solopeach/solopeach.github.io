@@ -22,18 +22,6 @@
     overflow: hidden;
 }
 
-.main {
-    display: grid;
-    grid-template-areas:
-    'nav nav nav nav'
-    'bio contents contents contents';
-    grid-template-rows: 1fr 14fr; /* First row 1fr, second row 6fr */
-    grid-template-columns: 1fr 2.5fr;
-    grid-column-gap: 1.11em;
-    grid-row-gap: 1.11em;
-    height: 53.2em;
-}
-
 .bio {
     grid-area: bio;
     background-color: #767d91;
@@ -56,6 +44,39 @@
     align-items: center;
     padding: 0 var(--padding-thin);
     border-radius: 44px;
+}
+
+@media screen and (max-width: 991px) {
+  .main {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: var(--padding);
+      gap: var(--padding-thin)
+  }
+
+  .content {
+    height: auto;
+    overflow: visible;
+  }
+
+  .noScrollbar { /* style for home page - isHome prop */
+    height: 75vw; /* set fixed height for smaller viewports */
+  }
+}
+
+@media screen and (min-width: 991px) {
+    .main {
+        display: grid;
+        grid-template-areas:
+        'nav nav nav nav'
+        'bio contents contents contents';
+        grid-template-rows: 1fr 14fr; /* First row 1fr, second row 6fr */
+        grid-template-columns: 1fr 2.5fr;
+        grid-column-gap: 1.11em;
+        grid-row-gap: 1.11em;
+        height: 53.2em;
+    }   
 }
 
 .skills {
