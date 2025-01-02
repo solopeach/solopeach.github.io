@@ -3,8 +3,8 @@ const coopData = [
     roleName: "Fullstack Developer",
     date: "Sept - Dec 2024",
     location: "Mississauga, Ontario",
-    company: "Super.com",
-    stack: ["Javascript", "Vue3"],
+    company: "Rodan Energy Solutions",
+    stack: ["Vue3", "Typescript", "Django", "Python", "MySQL", "Azure DevOps"],
     tasks: ["idk", "idk"],
     image: "/images/rodan.png"
   },
@@ -13,16 +13,16 @@ const coopData = [
     date: "May - Aug 2024",
     location: "Toronto, Ontario",
     company: "Super.com",
-    stack: ["React", "Redux"],
+    stack: ["Figma", "Wireframing", "Prototyping", "UX Research", "Amplitude"],
     tasks: ["Built reusable components", "Optimized performance"],
     image: "/images/Super_Primary_Blk.png"
   },
   {
-    roleName: "Frontend Developer",
+    roleName: "Fullstack Developer",
     date: "Sept - Dec 2023",
-    location: "Toronto, Ontario",
+    location: "Los Angeles, California (Remote)",
     company: "Creator Now",
-    stack: ["React", "Redux"],
+    stack: ["React", "Typescript", "PostgresQL", "Express", "Redis"],
     tasks: ["Built reusable components", "Optimized performance"],
     image: "/images/creatornow.png"
   },
@@ -31,7 +31,7 @@ const coopData = [
     date: "Jan - April 2023",
     location: "Ottawa, Ontario",
     company: "Applied Mind",
-    stack: ["React", "Redux"],
+    stack: ["Vue3", "GraphQL", "PostgresQL", "Python", "SQLAlchemy", "ZeroMQ"],
     tasks: ["Built reusable components", "Optimized performance"],
     image: "/images/appliedmind.svg"
   },
@@ -40,7 +40,7 @@ const coopData = [
     date: "May - Aug 2022",
     location: "Toronto, Ontario",
     company: "Super.com",
-    stack: ["React", "Redux"],
+    stack: ["React", "Typescript", "MQTT", "Linux"],
     tasks: ["Built reusable components", "Optimized performance"],
     image: "/images/ford.png"
   },
@@ -49,7 +49,7 @@ const coopData = [
     date: "May - Aug 2021",
     location: "Waterloo, Ontario",
     company: "Lean Payments",
-    stack: ["React", "Redux"],
+    stack: ["React", "Redux", "Node", "AWS", "PostgresQL", "Serverless"],
     tasks: ["Built reusable components", "Optimized performance"],
     image: "/images/leanpayments.svg"
   },

@@ -14,10 +14,10 @@ body {
   font-family: 'Satoshi-Regular', sans-serif;
   font-size: 1.11vw;
   line-height: 1.2;
-  background-image: url('/images/paperbg.jpg'); /* Use the public folder for the image */
-  background-size: auto; /* Ensures the image covers the entire screen */
-  background-repeat: no-repeat; /* Prevents tiling */
-  background-position: center; /* Centers the image */
+  background-image: url('/images/paperbg.jpg');
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
   background-attachment: fixed;
 }
 
@@ -34,12 +34,13 @@ body {
   --tertiary2: #a1c9ee;
   --fourth: #7db4e2;
   --fourth2: #66aae3;
+  --fourth3: #5ba7e5;
   --fifth: #4e99d7;
   --dark: #106cb7;
   --dark2: #084d86;
   --white: #f7f7f7;
   --grey1: #ebebeb;
-  --grey2: #e1e1e1;
+  --grey2: #dcdcdc;
   --grey3: #7a7a7a;
   --grey4: #4b4b4b;
   --text-primary: rgb(31, 32, 33);

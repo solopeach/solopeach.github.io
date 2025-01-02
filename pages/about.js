@@ -16,7 +16,7 @@ const About = () => {
                             Hi there, I'm Roni!
                         </h3>
                         <div className={styles.introbody}>
-                            I'm a CS student at the University of Waterloo, graduating in Spring 2025.
+                            I'm a Computer Scienece student at the University of Waterloo, graduating in Spring 2025.
                             I'm a developer with an eye for design, love for visuals, and passionate about building
                             beautiful digital experiences!
                         </div>

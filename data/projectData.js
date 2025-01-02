@@ -2,7 +2,7 @@ const coopData = [
   {
     roleName: "Topify",
     short: "Group project for 3rd year SQL course",
-    stack: ["React", "SQL"],
+    stack: ["React", "Python", "Flask", "MySQL"],
     description:
       "Transcribes video journal entries, summarizes, and generates color coded mood calendars with saved entries",
     image: "/images/hunter-x-hunter.jpg",
