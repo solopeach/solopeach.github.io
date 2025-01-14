@@ -38,7 +38,7 @@ const coopData = [
       The hardest part was coming up with the homepage design and choosing a color theme.
       Credits to okkoinu on Reddit for the Windows XP wallpaper.
     `,
-    image: "/images/sonic.png"
+    image: "/images/website.jpg"
   },
 ];
 

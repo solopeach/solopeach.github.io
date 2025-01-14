@@ -32,7 +32,11 @@ const Bio = ({ children }) => {
                 />
                 <Button svgName="github" url="https://github.com/solopeach" />
                 <Button iconName="IoMail" url="mailto:roniyy.wu@gmail.com" />
-                <Button iconName="IoDocumentTextOutline" />
+                <Button
+                    iconName="IoDocumentTextOutline"
+                    url="/files/resume.pdf"
+                    target="_blank"
+                />
             </div>
             <div className={styles.skills}>
                 <div className={styles.skillsintro}>

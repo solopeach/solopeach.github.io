@@ -21,7 +21,7 @@ const Coop = ({ coop }) => {
                         alt="Coop Image"
                     />
                     <div className={styles.maintext}>
-                        <h2>{coop.roleName}</h2>
+                        <h2 className={styles.role}>{coop.roleName}</h2>
                         <span className={styles.bottomdetails}>{coop.company} | <FaLocationDot /> {coop.location}</span>
                         <div className={styles.date}>{coop.date}</div>
                     </div>

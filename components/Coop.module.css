@@ -25,11 +25,16 @@
     padding-top: 0.3em;
 }
 
+.role {
+    color: var(--text-primary); 
+}
+
 .maintext {
     display: flex;
     flex-direction: column;
     gap: 0.35em;
     justify-content: center;
+    color: var(--grey4);
 }
 
 .stackcontainer {
