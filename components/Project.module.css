@@ -1,6 +1,6 @@
 .container {
     display: grid;
-    grid-template-columns: 1.6fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     background-color: var(--white);
     align-items: center;
@@ -9,6 +9,12 @@
     overflow: hidden;
     border: 0.2em solid var(--grey4);
     box-shadow: 0 0.15em 0 var(--grey4);
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
 }
 
 .short {

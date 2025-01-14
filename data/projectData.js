@@ -1,6 +1,6 @@
 const coopData = [
   {
-    roleName: "Space Invaders, a file explorer, and more",
+    roleName: "Space Invaders, file explorer, and more",
     short: "4 Android apps built in CS349",
     stack: [
       "Kotlin",
@@ -9,9 +9,10 @@ const coopData = [
       "Intellij",
     ],
     description: `
-      I built 4 different apps for an Android dev course. Insert links to videos here
+      I built 4 different apps for an Android dev course in 3rd year: a file explorer, an image editor/viewer, a space invaders game, and a pdf reader.
     `,
-    image: "/images/hunter-x-hunter.jpg"
+    image: "/images/spaceinvaders.jpg",
+    url: "https://github.com/solopeach/Kotlin-Projects"
   },
   {
     roleName: "Topify",
@@ -20,8 +21,8 @@ const coopData = [
     description:
       "I collaborated with 4 team members to create a web app that displays global and regional top Spotify songs. " +
       "The app populates a SQL database with data fetched through the Spotify API and queries it to return relevant data, " +
-      "such as top songs or artist-specific songs.",
-    image: "/images/hunter-x-hunter.jpg"
+      "such as top or artist-specific songs.",
+    image: "/images/topify.png"
   },
   {
     roleName: "Personal Website",
@@ -38,7 +39,8 @@ const coopData = [
       The hardest part was coming up with the homepage design and choosing a color theme.
       Credits to okkoinu on Reddit for the Windows XP wallpaper.
     `,
-    image: "/images/website.jpg"
+    image: "/images/website.jpg",
+    url: "https://github.com/solopeach/solopeach.github.io"
   },
 ];
 
